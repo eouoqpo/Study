@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>for object</title>
+	<script type="text/javascript">
+		var student = new Object();
+		student = {
+			name:"wan",
+			gender:"男",
+			age:23,
+			study:"benke",
+		};
+		for(var key in student){
+			var result = student[key];
+			console.log(key + ":" + result);
+		}
+		for(const value2 of student){
+			console.log(value2);
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

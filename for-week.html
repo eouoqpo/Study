@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>for week</title>
+	<script tyep="text/javascript">
+			var day = prompt("请输入你要转换的数字");
+		if(parseInt(day)!=NaN){
+			var dday =parseInt(day);
+			if(day==1){
+				console.log("星期一");
+			}else if(dday==2){
+				console.log("星期二");
+			}else if(dday==3){
+				console.log("星期三");
+			}else if(dday==4){
+				console.log("星期四");
+			}else if(dday==5){
+				console.log("星期五");
+			}else if(dday==6){
+				console.log("星期六");
+			}else if(dday==7){
+				console.log("星期七");
+			}else{
+				console.log("你输入的数字超出了范围~~~~(>_<)~~~~！");
+				console.log(typeof(day));
+			}
+		}else{
+			console.log("你输入的数字不符合要求，即不是存数字，也不是以数字开头的字符串");
+		}
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

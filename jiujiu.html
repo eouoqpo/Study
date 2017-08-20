@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>九九乘法表</title>
+	<script type="text/javascript">
+
+		// 第一种
+		document.write("<pre>");
+		for(var i = 1 ; i <= 9; i ++){
+			for(var j = 1; j <= i; j ++){
+				var nbsp = "&nbsp;&nbsp;";
+				document.write(j + "*" + i + "=" + i*j );
+				document.write("\t");
+			}
+			document.writeln("<br>");
+		}
+		document.write("</pre>");
+
+
+		// 第二种
+		document.write("<pre>");
+		for(var ii = 9; ii >= 0; ii--){
+			for(var jj = 1; jj <= ii; jj++){
+				document.write(jj + "*" + ii + "=" + jj*ii);
+				document.write("\t");
+			}
+			document.writeln("<br>");
+		}
+		document.write("</pre>");
+
+		// 第三种
+		document.write("<pre>");
+		var nbsp = "&nbsp;"
+		for(var i3 = 1; i3 <= 9; i3 ++){
+			if(9-i3 > 0){
+				for(var k3 = i3; 9 - k3 > 0; k3 ++){
+					document.write(nbsp);
+					document.write("\t");
+				}
+			}
+			for(var j3 = 1; j3 <= i3; j3 ++){
+				if(j3 * i3 <= 9){
+					document.write(j3 + "*" + i3 + "=" + nbsp + j3*i3);
+				}else{
+					document.write(j3 + "*" + i3 + "=" + j3*i3);
+				}
+				document.write("\t");
+			}
+			document.writeln("<br>");
+		}
+		document.write("</pre>");
+
+
+
+		//第四种
+		document.write("<pre>");
+		var nbsp = "&nbsp;"
+		for(var i4 = 9; i4 >= 0; i4 --){
+			if(9-i4 > 0){
+				for(var k4 = i4; 9 - k4 > 0; k4 ++){
+					document.write(nbsp);
+					document.write("\t");
+				}
+			}
+			for(var j4 = 1; j4 <= i4; j4 ++){
+				if(j4 * i4 <= 9){
+					document.write(j4 + "*" + i4 + "=" + nbsp + j4*i4);
+				}else{
+					document.write(j4 + "*" + i4 + "=" + j4*i4);
+				}
+				document.write("\t");
+			}
+			document.writeln("<br>");
+		}
+		document.write("</pre>");
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

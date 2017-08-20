@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>星期转换器</title>
+	<script type="text/javascript">
+	
+
+
+
+		var sday = prompt("请输入一个数字> 0 <");
+		var sday2 = parseInt(sday);
+		console.log(sday2);
+		if(String(sday2) != "NaN"){
+			//sday2 = +sday2;
+			switch(sday2){
+				case 1:
+					console.log("星期一");
+					break;
+				case 2:
+					console.log("星期二");
+					break;
+				case 3:
+					console.log("星期三");
+					break;
+				case 4:
+					console.log("星期四");
+					break;
+				case 5:
+					console.log("星期五");
+					break;
+				case 6:
+					console.log("星期六");
+					break;
+				case 7:
+					console.log("星期天");
+					break;
+				default:
+					console.log("你输入的数字超出了范围~~~~(>_<)~~~~！");
+					console.log(typeof(sday2));
+					break;
+			};
+		}
+		else{
+			console.log("你输入的数字不符合要求，即不是存数字，也不是以数字开头的字符串");
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
